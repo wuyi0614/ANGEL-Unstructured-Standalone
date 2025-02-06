@@ -1,0 +1,6 @@
+beautifulsoup4
+pandas
+python-dotenv
+rispy
+tiktoken
+weaviate-client
