@@ -35,7 +35,7 @@ client = weaviate.connect_to_custom(
     grpc_secure=False,  # Whether to use a secure channel for the gRPC API connection
     # auth_credentials=Auth.api_key(weaviate_api_key),  # API key for authentication
 )
-client.collections.delete("Audit")
+
 
 if not client.collections.exists(name="Audit"):
     collection = client.collections.create(
