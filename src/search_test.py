@@ -18,7 +18,7 @@ client = weaviate.connect_to_custom(
     grpc_host=grpc_host,  # Hostname for the gRPC API connection
     grpc_port=grpc_port,  # Default is 50051, WCD uses 443
     grpc_secure=False,  # Whether to use a secure channel for the gRPC API connection
-    # auth_credentials=Auth.api_key(weaviate_api_key),  # API key for authentication
+    auth_credentials=Auth.api_key(weaviate_api_key),  # API key for authentication
 )
 collection = client.collections.get("Audit")
 
