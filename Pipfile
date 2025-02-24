@@ -1,0 +1,15 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+beautifulsoup4 = "*"
+pandas = "*"
+python-dotenv = "*"
+rispy = "*"
+tiktoken = "*"
+weaviate-client = "*"
+
+[requires]
+python_version = "3.12"

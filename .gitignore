@@ -1,7 +1,10 @@
-/csv
+# credential files
+data/
+*-local
+*-local.*
 
 # OS generated files #
-######################
+.idea/
 .DS_Store
 .DS_Store?
 .Spotlight-V100

@@ -7,7 +7,7 @@ services:
     - '8080'
     - --scheme
     - http
-    image: m.daocloud.io/cr.weaviate.io/semitechnologies/weaviate:1.28.4
+    image: cr.weaviate.io/semitechnologies/weaviate:1.28.4
     ports:
     - 8080:8080
     - 50051:50051
@@ -27,6 +27,6 @@ services:
       ENABLE_TOKENIZER_GSE: 'true'
       CLUSTER_HOSTNAME: 'node1'
   t2v-transformers:
-    image: m.daocloud.io/cr.weaviate.io/semitechnologies/transformers-inference:sentence-transformers-paraphrase-multilingual-MiniLM-L12-v2
+    image: cr.weaviate.io/semitechnologies/transformers-inference:sentence-transformers-paraphrase-multilingual-MiniLM-L12-v2
     environment:
       ENABLE_CUDA: '0'
